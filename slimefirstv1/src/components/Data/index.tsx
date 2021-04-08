@@ -1,0 +1,1 @@
+export { default,changeToken,getToken,getTvl,setTvl} from './Myglobaldata'

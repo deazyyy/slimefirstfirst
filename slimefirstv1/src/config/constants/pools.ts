@@ -1,0 +1,167 @@
+import { PoolConfig, QuoteToken, PoolCategory  } from './types'
+
+const pools: PoolConfig[] = [
+  {
+    sousId:1,
+    tokenName: 'SUPRA',
+    stakingTokenName: QuoteToken.SLIME,
+    stakingTokenAddress: '0x4fCfA6cC8914ab455B5b33Df916d90BFe70b6AB1',
+    contractAddress: {
+      97: '0xe6Eb6aB90D5166a4C7729c814d8d84C0B717d87E',
+      56: '0xe6Eb6aB90D5166a4C7729c814d8d84C0B717d87E',
+    },
+    poolCategory: PoolCategory.CORE,
+    projectLink: 'https://www.supra.finance/',
+    harvest: true,
+    tokenPerBlock: '0.000173913043478260',
+    sortOrder: 1,
+      isFinished: true,
+    tokenDecimals: 18,
+    startBlock: 5291200,
+    endBlock: 5406200 ,
+ 
+  },
+   {
+     sousId:2,
+     tokenName: 'SUPRA',
+     stakingTokenName: QuoteToken.SLIME,
+     stakingTokenAddress: '0x4fcfa6cc8914ab455b5b33df916d90bfe70b6ab1',
+     contractAddress: {
+       97: '0x22D6E3bd2D3F5300230F90b8C09c193e8ac2A93D',
+       56: '0x22D6E3bd2D3F5300230F90b8C09c193e8ac2A93D',
+     },
+     poolCategory: PoolCategory.CORE,
+     projectLink: 'https://www.supra.finance/',
+     harvest: true,
+     tokenPerBlock: '0.000173913043478260',
+     sortOrder: 1,
+     isFinished: true,
+     tokenDecimals: 18,
+     startBlock: 5286400,
+     endBlock: 5401400 ,
+  
+   },
+   {
+    sousId:3,
+    tokenName: 'SALT',
+    stakingTokenName: QuoteToken.SLIME,
+    stakingTokenAddress: '0x4fCfA6cC8914ab455B5b33Df916d90BFe70b6AB1',
+    contractAddress: {
+      97: '0xcE5a6559e68690Ba5e982DF7631BB5bDDaE11448',
+      56: '0xcE5a6559e68690Ba5e982DF7631BB5bDDaE11448',
+    },
+    poolCategory: PoolCategory.CORE,
+    projectLink: 'https://www.saltswap.finance/',
+    harvest: true,
+    tokenPerBlock: '0.01428571428',
+    sortOrder: 1,
+    isFinished: true,
+    tokenDecimals: 18,
+    startBlock: 5332000,
+    endBlock: 5533600 ,
+    image : 'salt.svg'
+ 
+  },
+  {
+    sousId:4,
+    tokenName: 'ADA',
+    stakingTokenName: QuoteToken.SLIME,
+    stakingTokenAddress: '0x4fcfa6cc8914ab455b5b33df916d90bfe70b6ab1',
+    contractAddress: {
+      97: '0xc1fA4282b4F6Dd226dAfa52bCbC9eC944d789804',
+      56: '0xc1fA4282b4F6Dd226dAfa52bCbC9eC944d789804',
+    },
+    poolCategory: PoolCategory.CORE,
+    projectLink: 'https://cardano.org/',
+    harvest: true,    isFinished: true,
+    tokenPerBlock: '0.099206349206',
+    sortOrder: 1, 
+    tokenDecimals: 18,
+    startBlock: 5420998,
+    endBlock: 5521798 ,
+ 
+  },
+  {
+    sousId:5,
+    tokenName: 'DOGE',
+    stakingTokenName: QuoteToken.SLIME,
+    stakingTokenAddress: '0x4fcfa6cc8914ab455b5b33df916d90bfe70b6ab1',
+    contractAddress: {
+      97: '0x71Bc9A2a9D6c42E9789f6FcA4c779eaeB34c2349',
+      56: '0x71Bc9A2a9D6c42E9789f6FcA4c779eaeB34c2349',
+    },
+    poolCategory: PoolCategory.CORE,
+    projectLink: 'https://dogecoin.com/',
+    harvest: true,
+    tokenPerBlock: '2.4305555',
+    sortOrder: 1, 
+    tokenDecimals: 8,
+    startBlock: 5485849,
+    endBlock: 5572249 ,
+     
+  },
+  {
+    sousId:6,
+    tokenName: 'SOAK',
+    stakingTokenName: QuoteToken.SLIME,
+    stakingTokenAddress: '0x4fcfa6cc8914ab455b5b33df916d90bfe70b6ab1',
+    contractAddress: {
+      97: '0x81eEB7F6c387ee77003Ddb9AAcba4894561b6a88',
+      56: '0x81eEB7F6c387ee77003Ddb9AAcba4894561b6a88',
+    },
+    poolCategory: PoolCategory.CORE,
+    projectLink: 'https://www.sponge.finance/',
+    harvest: true,
+    tokenPerBlock: '0.05835069444444',
+    sortOrder: 1, 
+    tokenDecimals: 18,
+    startBlock: 5515050,
+    endBlock: 5803050 ,
+ 
+  },
+  {
+    sousId:7,
+    tokenName: 'BTCB',
+    stakingTokenName: QuoteToken.SLIME,
+    stakingTokenAddress: '0x4fcfa6cc8914ab455b5b33df916d90bfe70b6ab1',
+    contractAddress: {
+      97: '0x57EdD428eF41AF4bF5A27e9e0e0BF8a3EF4BD731',
+      56: '0x57EdD428eF41AF4bF5A27e9e0e0BF8a3EF4BD731',
+    },
+    poolCategory: PoolCategory.CORE,
+    projectLink: 'https://www.bitcoin.org/',
+    harvest: true,
+    tokenPerBlock: '0.000002281746032',
+    sortOrder: 1, 
+    tokenDecimals: 18,
+    startBlock: 5554790,
+    endBlock: 5756390 ,
+    withwithdrawFee:true,
+    withdrawFee:5,
+    slimeRounding:10
+  },
+  {
+    sousId:8,
+    tokenName: 'WBNB',
+    stakingTokenName: QuoteToken.SLIME,
+    stakingTokenAddress: '0x4fcfa6cc8914ab455b5b33df916d90bfe70b6ab1',
+    contractAddress: {
+      97: '0x90296eaebd38a794e5532ac7de16b1bdae790110',
+      56: '0x90296eaebd38a794e5532ac7de16b1bdae790110',
+    },
+    poolCategory: PoolCategory.CORE,
+    projectLink: 'https://www.binance.org/',
+    harvest: true,
+    tokenPerBlock: '0.0004365079365',
+    sortOrder: 1, 
+    tokenDecimals: 18,
+    startBlock: 5554790,
+    endBlock: 5756390 ,
+    withwithdrawFee:true,
+    withdrawFee:5,
+    slimeRounding:6
+ 
+  },
+]
+
+export default pools

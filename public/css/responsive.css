@@ -1,0 +1,283 @@
+@media(min-width:2560px){
+	/*comman*/
+	.container{
+		width: 1330px;
+		max-width: 1330px;
+	}
+	/*comman end*/
+}
+@media(min-width:2000px) and (max-width:2560px){
+	/*comman*/
+	.container{
+		width: 1330px;
+		max-width: 1330px;
+	}
+	/*comman end*/
+}
+@media(min-width:1800px) and (max-width:1999px){
+	/*comman*/
+	.container{
+		max-width: 1330px;
+		width: 1330px;
+	}
+	/*comman end*/
+}
+@media(min-width:1551px) and (max-width:1799px){
+	/*comman*/
+	.container{
+		max-width: 1330px;
+		width: 1330px;
+	}
+	/*comman end*/
+}
+@media(min-width:1351px) and (max-width:1550px){
+	/*comman*/
+	.container{
+		max-width: 1330px;
+		width: 1330px;
+	}
+	/*comman end*/
+}
+@media(min-width:1200px) and (max-width:1350px){
+
+	
+	/*comman*/
+	.btn-main{
+		font-size: 16px;
+	}
+	.faqs-container .title-main{
+		margin-bottom: 50px;
+	}
+	/* Divs Stake end */
+	/*inner page end*/
+}
+@media(min-width:1025px) and (max-width:1199px){
+
+	
+	/*comman*/
+	.btn-main{
+		font-size: 14px;
+	}
+
+	p{
+		font-size: 16px;
+	}
+
+	.title-main h2{
+		font-size: 36px;
+	}
+	/*comman end*/
+	/*header*/
+	
+	/* Divs Stake end */
+	/*inner page end*/
+}
+@media(min-width:992px) and (max-width:1024px){
+
+	/*comman*/
+	.btn-main{
+		font-size: 14px;
+	}
+
+	p{
+		font-size: 16px;
+	}
+
+	.title-main h2{
+		font-size: 36px;
+	}
+	
+	/* Divs Stake end */
+	/*inner page end*/
+}
+@media(min-width:768px) and (max-width:991px){
+
+
+
+	
+	/*comman*/
+	.btn-main{
+		font-size: 14px;
+	}
+
+	p{
+		font-size: 16px;
+	}
+
+	.title-main h2{
+		font-size: 28px;
+	}
+	
+	/* Divs Stake end */
+	/*inner page end*/
+}
+@media(min-width:448px) and (max-width:767px){
+
+
+	/*comman*/
+	.btn-main{
+		font-size: 14px;
+	}
+
+	p{
+		font-size: 14px;
+	}
+
+	.title-main h2{
+		line-height: 40px;
+		font-size: 24px;
+	}
+
+	
+
+	.faqs-container{
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.faqs-container .title-main{
+		margin-bottom: 20px;
+	}
+	.faq-wrapper .card-body p{
+		font-size: 14px;
+		line-height: 30px;
+	}
+	.faq-wrapper .accordion .card{
+		padding: 30px;
+	}
+	.faq-wrapper .accordion .card h2{
+		font-size: 16px;
+	}
+
+	.stake-container .title-main h2{
+		margin-bottom: 20px;
+	}
+	.stake-container .title-main{
+		margin-bottom: 50px;
+	}
+	/*inner-pages end*/	
+	/*inner page*/
+	.bannerOuter1{width: 100%}
+	.bannerOuter{min-height: 500px}
+	.bannerOuter2 img {
+	    width: 40%;
+	    margin-left: -80px;
+	    position: absolute;
+	    z-index: -1;
+	    right: 0;
+	    bottom: 0;
+	    transform: translateY(30%);
+	}
+	.whyOuter{flex-direction: column;}
+	.whyOuterbx{margin: 50px 0;width: 50%;}
+	.bannerOuter1 .btnOuter{
+		flex-direction: column;
+	}
+	.bannerOuter1 .btnOuter .btn-main{
+		margin: 0 !important;
+		margin-bottom: 10px !important
+	}
+	footer .container, nav .container{flex-direction: column;}
+	/* Divs Stake end */
+	/*inner page end*/
+}
+@media(max-width:447px){
+
+
+	/*comman*/
+	.btn-main{
+		font-size: 14px;
+
+	}
+
+	p{
+		font-size: 14px;
+	}
+
+	.title-main h2{
+		line-height: 40px;
+		font-size: 24px;
+	}
+
+	
+	/*index end*/
+	/*inner-pages*/
+	.about-us{
+		padding-top: 0;
+	}
+	.about-us .title-main{
+		margin-bottom: 20px;
+	}
+	.about-details p{
+		text-align: center;
+		line-height: 34px;
+	}
+
+	.faqs-container{
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.faqs-container .title-main{
+		margin-bottom: 20px;
+	}
+	.faq-wrapper .card-body p{
+		font-size: 14px;
+		line-height: 30px;
+	}
+	.faq-wrapper .accordion .card{
+		padding: 30px 15px;
+	}
+	.faq-wrapper .accordion .card h2{
+		font-size: 14px;
+		line-height: 24px;
+	}
+
+	.stake-container .title-main h2{
+		margin-bottom: 20px;
+	}
+	.stake-container .title-main{
+		margin-bottom: 50px;
+	}
+	/*inner-pages end*/	
+	
+
+	.faqs-container{
+		padding-bottom: 0px;
+	}
+	.faqs-container .title-main{
+		margin-bottom: 20px;
+	}
+	.faq-wrapper .accordion{
+		margin-top: 0;
+	}
+	.title-main p{
+	    line-height: 30px;
+	}
+
+	.bannerOuter1{width: 100%}
+	.bannerOuter{min-height: 500px}
+	.bannerOuter2 img {
+	    width: 40%;
+	    margin-left: -80px;
+	    position: absolute;
+	    z-index: -1;
+	    right: 0;
+	    bottom: 0;
+	    transform: translateY(30%);
+	}
+	.whyOuter{flex-direction: column;}
+	.whyOuterbx{margin: 50px 0;width: 60%;}
+	.bannerOuter1 .btnOuter{
+		flex-flow: wrap;
+	}
+	.bannerOuter1  .btnOuter .btn-main{
+		min-width: 200px
+	}
+	.bannerOuter1 .btnOuter .btn-main{
+		margin: 0 !important;
+		margin-bottom: 10px !important
+	}
+	footer .container, nav .container{flex-direction: column;}
+	/* Divs Stake end */
+	/*inner page end*/
+}
+

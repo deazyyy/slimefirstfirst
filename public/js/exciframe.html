@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css?ver=1.022" />
+<!--     <link rel="stylesheet" type="text/css" href="css/responsive.css?ver=1.022" /> -->
+    <link rel="icon" href="images/favicon.png" type="image/gif" sizes="10x16">
+    <title>Home - Divs</title>
+</head>
+<body style="overflow: hidden;background: #20233D;">
+    <div class="banner-form" style="box-shadow: none;padding: 20px !important"> 
+        <div>
+            <div class="form-content-blk">
+                <div class="from-content-left">
+                    <h5>Exchange</h5>
+                </div>
+            </div>
+            <div class="exchangeformsteps">
+                <div id="exchs1" class="">
+                    <div class="form-group-blk">
+                        <label>You Send</label>
+                        <div class="form-group form-grp-send">
+                            <div class="frm-drop" style="max-height: 100px;overflow: hidden;">
+                                <select class="form-control valsel" >
+                                    <option value="ETH" >ETH</option>
+                                    <option value="BTC" selected>BTC</option>
+                                    <option value="XMR">XMR</option>
+                                </select>
+                            </div>
+                            <input type="number" placeholder="1.000000" class="form-control" value="1" id="sendamt">
+                            <div class="form-grp-send-min"><span id="minval"></span></div>
+                        </div>
+                    </div>
+                    <div class="form-group-blk">
+                        <label>You get</label>
+                        <div class="form-group">
+                            <div class="frm-drop">
+                                <select class="form-control getsel">
+                                     <option value="XMR" selected>XMR</option>
+                                     <option value="ETH">ETH</option>
+                                    <option value="BTC" >BTC</option>
+                                    
+                                </select>
+                            </div>
+                            <input type="text" placeholder="0" class="form-control" id="receiveamt" disabled>
+                        </div>
+                    </div>
+                    <div class="form-group-btn">
+                        <button  class="btn-main winforward  windsendbtn">Exchange</button>
+                    </div>
+                </div>
+
+                <div id="exchs2" class="stepsd-none extratagf">
+                    <div class="form-group-blk exstp3">
+                        <label>Your Wallet address</label>
+                        <div class="form-group">
+                            <div >
+                                <input type="text"  autocomplete="off"  class="form-control" placeholder="Enter receipent address"  id="receipaddrss">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group-blk getwhat">
+                        <label>You get</label>
+                        <div class="form-group">
+                            <div class="geticon">trx</div>
+                            <div class="getvalue">5466</div>
+                        </div>
+                    </div>
+                    <div class="form-group-btn">
+                        <button  class="btn-main winbackward winfinal btn-back-win"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+                        <button type="submit" class="btn-main winforward " id="exchbtncontent" disabled="true">Exchange</button>
+                    </div>
+                </div>
+
+
+                <div id="exchs3" class="stepsd-none extratagf">
+                    <div class="form-group-blk sendaddress destinationtag">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <label >Important</label>
+                            <span class="mt-1 mytxnid"></span>
+                        </div>
+                        <div class="form-group">
+                            <div class="exchipclone">
+                                <input type="text"   class="form-control"  id="destinationtag" disabled="">
+                                <div><i class="fa fa-clone" aria-hidden="true"></i></div>
+                            </div>
+                            <div class="form-check-inline mt-3">
+                              <label class="form-check-label">
+                                <input id="detinationcheckbox" type="checkbox" class="form-check-input mr-2" value="">I will send the deposit using provided Destination Tag
+                              </label>
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="form-group-btn">
+                        <button type="submit" class="btn-main winforward ">Next</button>
+                    </div>
+                </div>
+
+                <div id="exchs4" class="stepsd-none extratagf">
+                    <div class="form-group-blk exstp3">
+                        <label>Your Wallet tag</label>
+                        <div class="form-group">
+                            <div >
+                                <input type="text"  autocomplete="off"  class="form-control" placeholder="Enter the destination tag"  id="wallettag" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group-blk getwhat">
+                        <label>You get</label>
+                        <div class="form-group">
+                            <div class="geticon">trx</div>
+                            <div class="getvalue">5466</div>
+                        </div>
+                    </div>
+                    <div class="form-group-btn">
+                        <!-- <button  class="btn-main winbackward winfinal btn-back-win"><i class="fa fa-arrow-left" aria-hidden="true"></i></button> -->
+                        <button type="submit" class="btn-main winforward " id="walletfwdbtn" disabled="true">Exchange</button>
+                    </div>
+                </div>
+
+
+
+
+                <div id="exchs5" class="stepsd-none">
+                    <div class="form-group-blk exstp3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <label>Send to the address below</label>
+                            <span class="mt-1 mytxnid"></span>
+                        </div>
+                       
+                        <div class="form-group sendadddress">
+                            <div class="exchipclone">
+                                <input type="text"   class="form-control"  id="address" disabled="">
+                                <div><i class="fa fa-clone" aria-hidden="true" onclick="withJquery()"></i></div>
+                            </div>
+                            <div id="sentvalname"></div>
+                        </div>
+                    </div>
+                    <div class="form-group-blk getwhat">
+                        <label>You get</label>
+                        <div class="form-group">
+                            <div class="geticon">trx</div>
+                            <div class="getvalue">5466</div>
+                        </div>
+                    </div>
+                    <div class="form-group-btn">
+                        <button type="submit" class="btn-main winforward winfinal" id="finalexchbtn" disabled="">Exchange</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div> 
+     <style type="text/css">
+    .sendaddress .form-group{position: relative;}
+    .sendaddress input{padding-left: 60px !important;font-size: 14px}
+    #sentvalname{position: absolute;left: 16px;top: 50%;transform: translateY(-50%);color: #fff}
+    .winfinalapicss{background-color: #333333 ;color: #fff }
+    .sendaddress span{color: #84899f;font-size: 13px}
+    .btn-back-win{width: 70px !important}
+    .banner-form iframe{border: 0;height: 370px;width: 100%;overflow: hidden;}
+    #destinationtag{padding-left: 14px !important}
+    .exchipclone{display: flex;align-items: center;}
+    .exchipclone input{width: auto;}        
+    .exchipclone div{
+        height: 62px;display: flex;align-items: center;justify-content: center;width: 50px;border-radius: 14px;background-color: #151729;margin-left: 8px;cursor: pointer;
+        -webkit-transition: all 0.7s ease;
+        transition: all 0.7s ease;
+    }
+    .bloco img:hover {
+    -webkit-transform:scale(1.2);
+    transform:scale(1.2);
+    }
+    .exchipclone div i{color: #fff}
+    .fg_destinationtgip{display: none;}
+
+    .form-group-btn{display: flex;}
+    #receipaddrss{padding-left: 20px}
+
+    .stepsd-none{display: none;}
+    #wallettag{padding-left: 14px}
+
+    .mytxnid {color: #fff;font-size: 12px}
+
+</style>
+    <script type="text/javascript" src="js/jquery.min.js"></script> 
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript">
+        //wow animation js
+        new WOW().init();
+    </script>
+    <script type="text/javascript">
+        $(".fa-clone").click(function(){
+            console.time('time1');
+            var temp = $("<input>");
+            $("body").append(temp);
+            var my_address = $(this).closest(".form-group").find('.form-control');
+            temp.val(my_address.val()).select();
+            document.execCommand("copy");
+            temp.remove();
+            console.timeEnd('time1');
+            $(this).css('box-shadow', '0px 0 20px 3px rgb(255 255 255 / 60%)');
+        });
+
+    </script>
+        <script type="text/javascript">
+
+        // get a list of coins in the option tag
+        var settings = {
+            "async": true,
+            "crossDomain": true,
+            "url": "https://api.godex.io/api/v1/coins",
+            "method": "GET",
+            "headers": {
+                "accept": "application/json"
+            }
+        }
+
+
+        $.ajax(settings).done(function (response) {
+            var optionval ="";
+            for(var i =0;i<response.length;i++){
+                if(response[i].code == "ETH")
+                    optionval +=`<span>dgfg</span><option value="${response[i].code}"  data-extra="${response[i].has_extra}" selected>${response[i].code} <span> - ${response[i].name}</span></option>`;
+                else
+                    optionval +=`<option value="${response[i].code}" data-extra="${response[i].has_extra}">${response[i].code} <span> - ${response[i].name} </span></option>`
+            }
+            $(".valsel").html(optionval);
+
+            var optionval ="";
+            for(var i =0;i<response.length;i++){
+                if(response[i].code == "TRX")
+                    optionval +=`<option value="${response[i].code}" data-extra="${response[i].has_extra}" selected>${response[i].code} <span> - ${response[i].name}</span></option>`;
+                else
+                    optionval +=`<option value="${response[i].code}" data-extra="${response[i].has_extra}" >${response[i].code} <span> - ${response[i].name}</span></option>`
+            }
+            $(".getsel").html(optionval);
+            getresponse();
+        });
+    </script>
+    <script type="text/javascript">
+        
+        var sendval, getval, sendmoney;
+        var isextrasend,isextraget;
+
+        var withextid="";
+        
+        // get the desired value from the selected coin after selecting  and changing
+        function getresponse(){
+            sendval = $("select.valsel").children("option:selected").val();
+            getval = $("select.getsel").children("option:selected").val();
+            isextrasend = parseInt($("select.valsel").children("option:selected").attr("data-extra"));
+            isextraget = parseInt($("select.getsel").children("option:selected").attr("data-extra"));
+            sendmoney = parseFloat($("#sendamt").val());
+            let settings = {
+            "async": true,
+            "crossDomain": true,
+            "url": "https://api.godex.io/api/v1/info",
+            "method": "POST",
+            "data": {
+                "from": sendval,
+                "to": getval,
+                "amount": sendmoney
+            },
+                "headers": {
+                    "accept": "application/json"
+                }
+            }
+
+            $.ajax(settings).done(function (response) {
+                if(sendmoney < response.min_amount){
+                    $("#minval").text("Minimum value is " + response.min_amount);
+                    $(".windsendbtn").prop('disabled', true); 
+                }else{
+                    $("#minval").text("");
+                    $("#receiveamt").val(response.amount);
+                    $(".geticon").text(getval);
+                    $(".getvalue").text(response.amount);
+                    $("#sentvalname").text(sendval);
+                    $(".windsendbtn").prop('disabled', false); 
+                    $("#receipaddrss").attr("placeholder", "Enter the recepient " + getval + " address");
+                }
+            });
+        }
+
+
+        $("select.valsel").change(function(){
+            sendval = $(this).children("option:selected").val();
+            if(sendval == getval){
+                $("#minval").text("Cannot transfer to same currency");
+                $(".windsendbtn").prop('disabled', true); 
+            }else{
+                $("#minval").text("");
+                 getresponse();
+                 $(".windsendbtn").prop('disabled', false); 
+            }
+           
+        });
+        $("select.getsel").change(function(){
+            getval = $(this).children("option:selected").val();
+            if(sendval == getval){
+                $("#minval").text("Cannot transfer to same currency");
+                $(".windsendbtn").prop('disabled', true); 
+            }else{
+                $("#minval").text("");
+                 getresponse();
+                 $(".windsendbtn").prop('disabled', false); 
+            }
+        });
+        $("#sendamt").on("input", function(){
+          sendmoney = parseFloat($(this).val());
+          getresponse();
+        });
+
+
+        // change the btn props  on inputing again and again
+        $("#receipaddrss").on("input", function(){
+            if($(this.val)){
+                $("#exchbtncontent").prop('disabled', false); 
+            }else{
+                $("#exchbtncontent").prop('disabled', true); 
+            }
+            disblebtncss();
+        });
+
+        $("#wallettag").on("input", function(){
+            if($(this.val)){
+                $("#walletfwdbtn").prop('disabled', false); 
+            }else{
+                $("#walletfwdbtn").prop('disabled', true); 
+            }
+            disblebtncss();
+        });
+        disblebtncss();
+        function disblebtncss(){
+            $(".winforward").each(function(){
+                if($(this).prop('disabled') == true){
+                    console.log("in disabled btn")
+                    $(this).css("background-color","#333333");
+                    $(this).css("color","#fff");
+                }else{
+                     $(this).css("background-color","#00ca2e");
+                     $(this).css("color","#110f1e");
+                     console.log("out disabled btn")
+                }
+           });
+        }
+        
+        if($('.winforward').prop('disabled') == true){
+            console.log("in disabled btn")
+            $(this).css("background-color","#333333");
+            $(this).css("color","#fff");
+        }else{
+             $(this).css("background-color","#00ca2e");
+             $(this).css("color","#110f1e");
+             console.log("out disabled btn")
+        }
+
+
+
+        //creates the transaction
+        var txid,trresponse;
+
+        function createtransaction(){
+            var usraddress = $("#receipaddrss").val();
+            let settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": "https://api.godex.io/api/v1/transaction",
+                "method": "POST",
+                "data": {
+                    "coin_from": sendval,
+                    "coin_to": getval,
+                    "deposit_amount": sendmoney,
+                    "withdrawal": usraddress ,
+                    "withdrawal_extra_id": withextid,
+                    "return": "LsZK2wfxvXrfsfB6L39qmCcV5DK29ismmAwN41",
+                    "return_extra_id": "qbGDbH9gwrAkfJTM6gxsfQpWYMfe8zRuZsSpoU77sx73peCPbzdZaUWW9tKWbBDs3hmeV",
+                    "affiliate_id": "rz5ukL2BqGLbqHQr"
+            },
+                "headers": {
+                    "accept": "application/json"
+                }
+            }
+
+
+            $.ajax(settings).done(function (response) {
+                console.log(response)
+                trresponse = response;
+                txid = response.transaction_id;
+                $("#address").val(response.deposit);
+                $(".mytxnid").html("Tx ID : " + txid);
+            });
+        }
+
+
+        // gets the status of the transaction from the api , it is called again and again
+        function getstatus(statusresponse){
+            var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": "https://api.godex.io/api/v1/transaction/"+statusresponse+"/status",
+                "method": "GET",
+                "headers": {
+                    "accept": "application/json"
+                }
+            }
+
+            $.ajax(settings).done(function (response) {
+                $(".winfinal").addClass("winfinalcss")
+                $("#finalexchbtn").addClass("winfinalapicss")
+                
+
+                if(response == "wait"){
+                    $("#finalexchbtn").text("Awaiting deposit");
+                    $(".winfinalapicss").css("color", "#9a9fa8 ");
+                    $(".winfinalapicss").css("background-color", "#e1e2e8 ");
+                    $(".sendaddress span").html(" Order details <br> Tx ID:" + txid);
+                }else if(response == "confirmation"){
+                    $("#address").val(sendmoney);
+                    $("#finalexchbtn").text("Network confirmation");
+                    $(".sendaddress label").text("Order details");
+                    $(".winfinalapicss").css("color", "#e8ba70");
+                    $(".winfinalapicss").css("background-color", "#fbe6cd");
+                }
+                else if(response == "exchanging"){                    
+                    $("#finalexchbtn").text("Exchanging");
+                    $(".winfinalapicss").css("color", "#6f75a5");
+                    $(".winfinalapicss").css("background-color", "#d7d6ee");
+                }
+                else if(response == "sending"){
+                    $("#finalexchbtn").text("Sending");
+                }
+               else if(response == "success"){
+                    $("#address").val(response.withdrawal);
+                    $("#sentvalname").text("Hash");
+                    $("#finalexchbtn").text("Finished");
+                    $(".winfinalapicss").css("color", "#569f76");
+                    $(".winfinalapicss").css("background-color", "#a0deb9");
+                }
+                else if(response == "error"){
+                    $("#finalexchbtn").text("Error");
+                    $(".winfinalapicss").css("background-color", "red");
+                }
+            });
+        }
+
+
+        $("#exchs1 .winforward").click(function(){
+        $("#exchs1").hide();
+        $("#exchs2").show();
+    });
+
+
+
+
+    $("#exchs2 .winbackward").click(function(){
+        $("#exchs1").show();
+        $("#exchs2").hide();
+    });
+
+
+    var uncertain = 0;
+    var inextra =0;
+    $(".extratagf .winforward").click(function(){
+        console.log(typeof(isextrasend))
+        console.log(uncertain)
+    
+        // this runs when we have to enter the destination tag
+        if(isextraget && (uncertain == 0 )){
+            $("#exchs1").hide();
+            $("#exchs2").hide();
+            $("#exchs3").hide();
+            $("#exchs4").show();
+            inextra = 1;
+            
+        }
+
+        // below code runs when the destination tag is already entered
+        else if(isextrasend && (uncertain == 0 || inextra == 1)){
+            $("#exchs1").hide();
+            $("#exchs2").hide();
+            $("#exchs3").show();
+            $("#exchs4").hide();
+            console.log("hello");
+            createtransaction();
+            //  
+            $("#detinationcheckbox").click(function(){
+                if($(this).is(":checked") == true ){
+                    $("#destinationtag").val(trresponse.deposit_extra_id);
+                }else{
+                    $("#destinationtag").val("Destination ID");
+                }
+            });
+            if(inextra == 1)
+                inextra=2;
+        }
+        // this takes us to the last stage of transaction
+        else{
+            $("#exchs1").hide();
+            $("#exchs2").hide();
+            $("#exchs3").hide();
+            $("#exchs4").hide();
+            $("#exchs5").show();
+            withextid =$("#wallettag").val();
+           createtransaction();
+           setInterval(function() { 
+               getstatus(trresponse.transaction_id)
+            }, 800); 
+
+        }
+        uncertain = uncertain+1;
+        
+    });
+
+    </script>
+</body>
+</html>
