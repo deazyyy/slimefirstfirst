@@ -33,7 +33,7 @@ const PanelBody: React.FC<Props> = ({ isDark, isPushed, pushNav, isMobile, links
   return (
     <Container>
       
-      <img width="160" height="51" src={isDark ? 'images/slime/navw.png' : 'images/slime/navb.png'} alt="navimg" className="navlogo"/>
+      <img width="160" height="51" src={isDark === true ? 'images/slime/navw.png' : 'images/slime/navb.png'} alt="navimg" className="navlogo"/>
       {links.map((entry) => {
         const Icon = Icons[entry.icon];
         const iconElement = <Icon width="24px" mr="8px" />;

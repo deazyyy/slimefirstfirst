@@ -19,7 +19,7 @@ var PanelBody = function (_a) {
     // Close the menu when a user clicks a link on mobile
     var handleClick = isMobile ? function () { return pushNav(false); } : undefined;
     return (react_1["default"].createElement(Container, null,
-        react_1["default"].createElement("img", { width: "160", height: "51", src: isDark ? 'images/slime/navw.png' : 'images/slime/navb.png', alt: "navimg", className: "navlogo" }),
+        react_1["default"].createElement("img", { width: "160", height: "51", src: isDark === true ? 'images/slime/navw.png' : 'images/slime/navb.png', alt: "navimg", className: "navlogo" }),
         links.map(function (entry) {
             var Icon = Icons[entry.icon];
             var iconElement = react_1["default"].createElement(Icon, { width: "24px", mr: "8px" });

@@ -495,3 +495,63 @@ section{margin: 200px 0;position: relative;}
 .learnslime{
   margin-top: 300px
 }
+
+
+/* shiny button */
+.btnOuter{
+  position:relative;
+  overflow:hidden;
+  z-index: 10;
+  transition: all 0.3s ease;
+  padding: 10px;
+}
+.btn-main:hover{
+  transform: scale(1.06);
+}
+.btn_shiny:before{
+  content: '';
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255, 1);
+  width: 60px;
+  height: 100%;
+  left: 0px;
+  top: 0;
+  opacity: 0;
+  -webkit-filter: blur(30px);
+  filter: blur(30px);
+  transform: translateX(-50px) skewX(-15deg);         
+}
+.btn_shiny:after{
+  content: '';
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255, 1);
+  width: 30px;
+  height: 100%;
+  left: 30px;
+  top: 0;
+  opacity: 0;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  transform: translateX(-50px) skewX(-15deg);          
+}
+.btn_shiny:hover:before {
+  transform: translateX(300px) skewX(-15deg);
+  opacity: 0.6;
+  transition: 2s;
+}
+.btn_shiny:hover:after {
+  transform: translateX(300px) skewX(-15deg);
+  opacity: 1;
+  transition: 2s;
+}
+
+.btn_shiny{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index:0
+}
